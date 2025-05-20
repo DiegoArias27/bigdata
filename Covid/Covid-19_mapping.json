@@ -1,0 +1,66 @@
+{
+  "mappings": {
+    "properties": {
+      "FECHA_ACTUALIZACION": { "type": "date", "format": "MM-dd-yyyy" },
+      "ID_REGISTRO": { "type": "keyword" },
+      "ORIGEN": { "type": "keyword" },
+      "SECTOR": { "type": "keyword" },
+      "ENTIDAD_UM": {
+        "properties": {
+          "ID": { "type": "integer" },
+          "NOMBRE": { "type": "keyword" }
+        }
+      },
+      "SEXO": { "type": "keyword" },
+      "ENTIDAD_NAC": {
+        "properties": {
+          "ID": { "type": "integer" },
+          "NOMBRE": { "type": "keyword" }
+        }
+      },
+      "TIPO_PACIENTE": { "type": "keyword" },
+      "FECHA_INGRESO": { "type": "date", "format": "MM-dd-yyyy" },
+      "FECHA_SINTOMAS": { "type": "date", "format": "MM-dd-yyyy" },
+      "FECHA_DEF": {
+        "type": "date",
+        "format": "MM-dd-yyyy",
+        "null_value": null
+      },
+      "INTUBADO": { "type": "keyword" },
+      "NEUMONIA": { "type": "keyword" },
+      "EDAD": { "type": "integer" },
+      "NACIONALIDAD": { "type": "keyword" },
+      "EMBARAZO": { "type": "keyword" },
+      "HABLA_LENGUA_INDIG": { "type": "keyword" },
+      "INDIGENA": { "type": "keyword" },
+      "DIABETES": { "type": "keyword" },
+      "EPOC": { "type": "keyword" },
+      "ASMA": { "type": "keyword" },
+      "INMUSUPR": { "type": "keyword" },
+      "HIPERTENSION": { "type": "keyword" },
+      "OTRA_COM": { "type": "keyword" },
+      "CARDIOVASCULAR": { "type": "keyword" },
+      "OBESIDAD": { "type": "keyword" },
+      "RENAL_CRONICA": { "type": "keyword" },
+      "TABAQUISMO": { "type": "keyword" },
+      "OTRO_CASO": { "type": "keyword" },
+      "TOMA_MUESTRA_LAB": { "type": "keyword" },
+      "RESULTADO_LAB": { "type": "keyword" },
+      "TOMA_MUESTRA_ANTIGENO": { "type": "keyword" },
+      "RESULTADO_ANTIGENO": { "type": "keyword" },
+      "CLASIFICACION_FINAL": { "type": "keyword" },
+      "MIGRANTE": { "type": "keyword" },
+      "PAIS_NACIONALIDAD": { "type": "keyword" },
+      "PAIS_ORIGEN": { "type": "keyword" },
+      "UCI": { "type": "keyword" },
+      "RES": {
+        "properties": {
+          "id_entidad": { "type": "integer" },
+          "entidad": { "type": "keyword" },
+          "id_municipio": { "type": "integer" },
+          "municipio": { "type": "keyword" }
+        }
+      }
+    }
+  }
+}
