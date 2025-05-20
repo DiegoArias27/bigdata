@@ -1,0 +1,37 @@
+{
+  "mappings": {
+    "properties": {
+      "CRASH_RECORD_ID": { "type": "keyword" },
+      "CRASH_DATE": { "type": "date", "format": "yyyy-MM-dd HH:mm:ss" },
+      "WEATHER_CONDITION": { "type": "keyword" },
+      "LIGHTING_CONDITION": { "type": "keyword" },
+      "FIRST_CRASH_TYPE": { "type": "keyword" },
+      "TRAFFICWAY_TYPE": { "type": "keyword" },
+      "ALIGNMENT": { "type": "keyword" },
+      "ROADWAY_SURFACE_COND": { "type": "keyword" },
+      "ROAD_DEFECT": { "type": "keyword" },
+      "CRASH_TYPE": { "type": "keyword" },
+      "SEC_CONTRIBUTORY_CAUSE": { 
+        "type": "keyword",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "STREET_NAME": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "NUM_UNITS": { "type": "integer" },
+      "INJURIES_FATAL": { "type": "float" },
+      "INJURIES_INCAPACITATING": { "type": "float" },
+      "CRASH_HOUR": { "type": "integer" },
+      "CRASH_DAY_OF_WEEK": { "type": "integer" }
+    }
+  }
+}
